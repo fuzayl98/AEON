@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+    <data>
+
+        <import type="com.fuzaylofficial.aeon.customutils.StringUtil"></import>
+
+        <variable
+            name="payment"
+            type="com.fuzaylofficial.aeon.models.Payments.PaymentsResponse" />
+    </data>
+
+
+
+    <androidx.cardview.widget.CardView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="10dp"
+        android:layout_margin="10dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:id="@+id/descView"
+                android:text="@string/desc"
+                app:bindCorrectString="@{payment.desc}"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/amoutView"
+                android:layout_below="@id/descView"
+                android:text="@string/amout"
+                app:bindCorrectString="@{payment.amount}"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/currencyView"
+                android:layout_below="@id/amoutView"
+                android:text="@string/currency_title"
+                app:bindCorrectString="@{payment.currency}"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="10dp"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/createdView"
+                android:layout_below="@id/currencyView"
+                android:text="@string/created"
+                app:bindCorrectDate="@{payment.created}"
+                android:layout_margin="10dp"
+                android:textSize="16sp"/>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</layout>

@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">AEON</string>
+    <string name="title_home">Авторизация</string>
+    <string name="title_dashboard">Список платежей</string>
+    <string name="title_notifications">Уводомление</string>
+    <string name="log_in">Войти</string>
+    <string name="password">Пароль</string>
+    <string name="login">Логин</string>
+    <string name="user_logged">Пользователь авторизован</string>
+    <string name="log_out">Выйти</string>
+    <string name="errorio">Прозошло неизвестная ошибка</string>
+    <string name="errorserver">Ошибка сети</string>
+    <string name="no_auth">Сначала авторизуйтесь!</string>
+    <string name="currency_title">Валюта : </string>
+    <string name="correct_def_value">Неизвестно</string>
+    <string name="desc">Описание : </string>
+    <string name="amout">Количество : </string>
+    <string name="created">Создан : </string>
+</resources>
